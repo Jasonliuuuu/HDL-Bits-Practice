@@ -1,4 +1,7 @@
-module top_module ( input clk, input d, output q );
+module top_module (
+    input clk,
+    input d,
+    output q );
     
     wire w1, w2; 
     

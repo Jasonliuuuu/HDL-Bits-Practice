@@ -1,9 +1,8 @@
 module top_module(
     input [31:0] a,
     input [31:0] b,
-    output [31:0] sum
+    output reg [31:0] sum
 );
-    
     wire w1, w2; 
     wire [15:0] sum0, sum1; 
     
@@ -31,7 +30,6 @@ module top_module(
             0: sum[31:16] = sum0; 
             1: sum[31:16] = sum1; 
         endcase
-        
     end
     
 
